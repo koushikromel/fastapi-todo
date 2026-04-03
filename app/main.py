@@ -8,4 +8,4 @@ app = FastAPI()
 @app.get("/")
 async def home():
     time = datetime.now(timezone.utc).isoformat()
-    return f"Hello, world! Current time: {time}"
+    return f"asdfHello, world! Current time: {time}"
