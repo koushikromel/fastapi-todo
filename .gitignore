@@ -13,3 +13,7 @@ wheels/
 .DS_Store
 
 .env
+.vercel
+.env*.local
+
+a/
