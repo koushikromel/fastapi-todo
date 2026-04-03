@@ -22,4 +22,4 @@ async def home():
     return "Hello, world!"
 
 
-app.include_router(todo_router, prefix="/todo")
+# app.include_router(todo_router, prefix="/todo")
