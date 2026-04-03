@@ -10,6 +10,9 @@ dependencies = [
     "sqlmodel>=0.0.37",
 ]
 
+[project.scripts]
+app = "app.main:app"
+
 [dependency-groups]
 dev = [
     "ruff>=0.15.8",
