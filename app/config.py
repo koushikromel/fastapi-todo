@@ -9,6 +9,10 @@ class Settings(BaseSettings):
     DB_PORT: int
     DB_NAME: str
 
+    GOOGLE_CLIENT_ID: str
+    GOOGLE_CLIENT_SECRET: SecretStr
+    SECRET_KEY: SecretStr
+
     @property
     def DB_URL(self) -> str:
         return (
