@@ -8,7 +8,10 @@ from app.db import engine
 from app.models import Todo, TodoUpdate, TodoBase
 
 
-todo_router = APIRouter()
+from fastapi import Depends
+from app.dependencies import get_current_user
+
+todo_router = APIRouter(dependencies=[Depends(get_current_user)])
 
 
 @todo_router.get("/home")
